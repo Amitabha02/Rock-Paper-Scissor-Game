@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+h1{
+    background-color: #081B31;
+    color:#ffff;
+    text-align: center;
+    height:3.5rem;
+    line-height: 3.5rem;  /* Helps us to alingn the text vertically. Tip is to give same value as height*/
+}
+
+.choice{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;        /* To make the images center of the divs*/
+    justify-content: center; /* To make the images center of the divs*/
+    align-items: center; /* To make the images center of the divs*/
+}
+
+.choice:hover{ /* Helps us to give a effects while hovering over the image*/
+    cursor: pointer;
+    background-color: #081B31 ;
+
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover; /* Helps us to unshirk the images*/
+    border-radius: 50%;
+    
+}
+
+.choices{
+    display: flex; /* Helps us to align the images side by side*/
+    justify-content: center; /* Helps us to align the images vertically center*/
+    align-items: center;
+    gap:3rem; /* Giving gaps needed inbetween images*/
+    margin-top: 4rem;
+}  
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    gap:5rem;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+}
+
+.result-container{
+    margin-top: 2rem;
+}
+
+#msg{
+    background-color: #081B31;
+    color:#ffff;
+    font-size: 1.5rem;
+    display: inline; /* It will help the background color end where content ends */ 
+    padding:.5rem;
+    border-radius: .5rem;
+
+}
